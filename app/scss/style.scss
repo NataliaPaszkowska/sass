@@ -1,5 +1,18 @@
-$base-color: #220000;
-
+$base-color: pink;
 body {
 	color: $base-color;
+}
+
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				color: goldenrod;
+			}
+		}
+	}
 }
