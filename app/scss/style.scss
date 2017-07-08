@@ -1,6 +1,12 @@
-$base-color: pink;
+@import "zmienne";
+@mixin menu-nawigacyjne {
+	color: darkolivegreen;
+	font-size: 22px;
+}
+
 body {
 	color: $base-color;
+	background-color: $bg-color;
 }
 
 nav {
@@ -10,8 +16,9 @@ nav {
 		list-style: none;
 		li {
 			display: inline-block;
+			color: aqua;
 			a {
-				color: goldenrod;
+				@include menu-nawigacyjne;
 			}
 		}
 	}
